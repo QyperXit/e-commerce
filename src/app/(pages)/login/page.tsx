@@ -1,5 +1,5 @@
-import React from 'react'
 import { Metadata } from 'next'
+import React from 'react'
 
 import { Gutter } from '../../_components/Gutter'
 import { RenderParams } from '../../_components/RenderParams'
@@ -14,13 +14,7 @@ export default async function Login() {
     validUserRedirect: `/account?warning=${encodeURIComponent('You are already logged in.')}`,
   })
 
-  return (
-    <Gutter className={classes.login}>
-      <RenderParams className={classes.params} />
-      <h1>Log in</h1>
-      <LoginForm />
-    </Gutter>
-  )
+  return <section></section>
 }
 
 export const metadata: Metadata = {
